@@ -2,9 +2,9 @@ let freq = {};
 const topKfrequent = (nums, k) => {
   const newarr = new Map();
   console.log(nums);
-  if (nums.length == 1 && k == 1) {
-    return nums;
-  }
+  // if (nums.length == 1 && k == 1) {
+  //   return nums;
+  // }
   for (let i = 0; i < nums.length; i++) {
     if (!newarr.has(nums[i])) {
       newarr.set(nums[i], 1);
@@ -25,5 +25,5 @@ const topKfrequent = (nums, k) => {
   }
   return result;
 };
-console.log(topKfrequent([1, 2], 2));
+console.log(topKfrequent([1], 1));
 // console.log(topKfrequent([1], 1));
